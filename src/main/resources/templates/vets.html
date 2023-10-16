@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head::headContent"></head>
+
+
+<body>
+	<div class="hero_area">
+		<header th:replace="fragments/header::headerContent"></header>
+		<div class="container" >
+			<div class="card-group">
+				<div class="card text-dark bg-info mb-3 text-center" style="max-width: 18rem; margin-right: 3rem; margin-top: 2rem;">
+					<!-- put item.userId & item.id below this -->
+					<div class="card-header"></div>
+					<img th:src="@{/images/g-4.png}" class="card-img-top" alt="Img-Vet">
+					<div class="card-body">
+						<!-- put item.title below this -->
+						<h5 class="card-title"></h5>
+						<!-- put item.body below this -->
+						<p class="card-text"></p>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer th:replace="fragments/footer::footerContent"></footer>
+<script th:src="@{/js/vets.js}"></script>
+
+</html>

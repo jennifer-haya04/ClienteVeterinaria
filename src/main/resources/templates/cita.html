@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head::headContent"></head>
+
+<body>
+	<div class="hero_area">
+		<header th:replace="fragments/headerLogin::headerContentLogin"></header>
+		<section class="map_section">
+
+			<div class="form_container">
+				<div class="row">
+					<div class="col-md-4 col-sm-8 offset-md-4">
+						<form action="" id="agendarCita">
+							<div class="text-center">
+								<h3>
+									Agendar Cita
+								</h3>
+							</div>
+							<div>
+								<select id="selectMascota" style="margin:18px 0 0 18px ;">
+									<option value="0">--Mascota</option>
+								</select>
+							</div>
+							<div>
+								<select id="selectVet" style="margin:18px 0 0 18px ;">
+									<option value="0">--Veterinario</option>
+								</select>
+							</div>
+							<div>
+								<input type="text" placeholder="Motivo de Consulta" id="motivo">
+							</div>
+							<div>
+								<input type="date" placeholder="Fecha" id="fecha">
+							</div>
+							<div>
+								<input type="time" placeholder="Hora" id="hora">
+							</div>
+							<div class="d-flex justify-content-center">
+								<button type="submit">
+									AGENDAR
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="getResultDiv" style="padding: 20px 20px 20px 20px" >
+				<ul class="list-group" style="text-align: center">
+				</ul>
+			</div>
+		</section>
+
+		<footer th:replace="fragments/footer::footerContent"></footer>
+	</div>
+</body>
+<script th:src="@{/js/cita.js}"></script>
+
+</html>

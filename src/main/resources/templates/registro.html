@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head::headContent"></head>
+
+<body>
+	<div class="hero_area">
+		<header th:replace="fragments/header::headerContent"></header>
+		<section class="map_section">
+
+			<div class="form_container">
+				<div class="row">
+					<div class="col-md-4 col-sm-8 offset-md-4">
+						<form action="" id="registerUser">
+							<div class="text-center">
+								<h3>
+									Registrarse
+								</h3>
+							</div>
+							<div>
+								<input type="text" placeholder="Nombre" class="pt-3" id="nombre">
+							</div>
+							<div>
+								<input type="text" placeholder="Apellidos" id="apellidos">
+							</div>
+							<div>
+								<input type="text" placeholder="Dni" id="dni">
+							</div>
+							<div>
+								<input type="text" placeholder="Dirección" id="direccion">
+							</div>
+							<div>
+								<input type="text" placeholder="Celular" id=celular>
+							</div>
+							<div>
+								<input type="email" placeholder="Email" id="email">
+							</div>
+							<div>
+								<input type="email" placeholder="Usuario" id="usuario">
+							</div>
+							<div>
+								<input type="password" placeholder="Password" id="password">
+							</div>
+							<div class="d-flex justify-content-center">
+								<button type="submit">
+									REGISTRAR
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer th:replace="fragments/footer::footerContent"></footer>
+	</div>
+</body>
+<script th:src="@{/js/postUser.js}"></script>
+</html>

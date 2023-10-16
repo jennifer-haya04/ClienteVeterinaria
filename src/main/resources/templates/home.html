@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head::headContent"></head>
+
+<body>
+	<div class="hero_area">
+		<header th:replace="fragments/header::headerContent"></header>
+		<section class=" slider_section position-relative">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-4 offset-md-2">
+									<div class="slider_detail-box">
+										<h1>
+											Profesionales
+											<span>
+												Cuidando de tu mascota
+											</span>
+										</h1>
+										<p>
+											Los mejores profesionales del sector medico veterinario 
+											para cuidar de tu consentido
+										</p>
+										<div class="btn-box">
+											<a href="/cita" class="btn-1">
+												Agendar
+											</a>
+											<a href="" class="btn-2">
+												Contactanos
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="slider_img-box">
+										<img th:src="@{/images/slider-img.png}" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-4 offset-md-2">
+									<div class="slider_detail-box">
+										<h1>
+											Tienda
+											<span>
+												Juguetes y accesorios 
+											</span>
+										</h1>
+										<p>
+											Nuestra tienda cuenta con juguetes y accesorios necesarios para el desarrollo 
+											y entretenimiento de tu mascota
+										</p>
+										<div class="btn-box">
+											<a href="" class="btn-1">
+												Comprar ahora
+											</a>
+											<a href="" class="btn-2">
+												Contactanos
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="slider_img-box">
+										<img th:src="@{images/slider-img.png}" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<footer th:replace="fragments/footer::footerContent"></footer>
+	</div>
+</body>
+
+</html>
